@@ -6,8 +6,14 @@ jobs:
   hello-nedap:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Nedap
-        run: echo "Hello Nedap"
+      - uses: actions/checkout@v3
 
-      - name: Something else
-        run: echo
+      - name: Check checkout
+        run: cat pom.xml
+
+
+#      - name: Hello Nedap
+#        run: echo "Hello Nedap"
+#
+#      - name: Something else
+#        run: echo
